@@ -5,6 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import java.util.Collection;
+import java.util.Collections;
 
 @Data
 @NoArgsConstructor
@@ -12,7 +17,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "app_user")
 @Inheritance(strategy = InheritanceType.JOINED)
-public class User {
+public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,4 +30,9 @@ public class User {
 
     @Column(nullable = false)
     private String role; // "ROLE_TEACHER" or "ROLE_STUDENT"
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return Collections.singletonList(new SimpleGrantedAuthority(role));
+    }
 }
