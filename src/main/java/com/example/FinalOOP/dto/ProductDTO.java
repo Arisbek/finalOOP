@@ -1,7 +1,6 @@
-package com.example.invenotry_management.dto;
+package com.example.FinalOOP.dto;
 
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 

@@ -1,4 +1,4 @@
-package com.example.invenotry_management.exception;
+package com.example.FinalOOP.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

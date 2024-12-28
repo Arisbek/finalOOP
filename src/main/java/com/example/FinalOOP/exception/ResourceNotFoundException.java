@@ -1,4 +1,4 @@
-package com.example.invenotry_management.exception;
+package com.example.FinalOOP.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

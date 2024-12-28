@@ -1,4 +1,4 @@
-package com.example.invenotry_management.dto;
+package com.example.FinalOOP.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import java.util.List;
