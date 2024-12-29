@@ -1,5 +1,7 @@
 com\example\FinalOOP\Application.class
+com\example\FinalOOP\config\CorsConfig.class
 com\example\FinalOOP\model\Code.class
+com\example\FinalOOP\config\CorsConfig$1.class
 com\example\FinalOOP\service\CodeService.class
 com\example\FinalOOP\exception\InvalidOperationException.class
 com\example\FinalOOP\controller\CodeController.class
