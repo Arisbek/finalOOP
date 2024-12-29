@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/codes")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://vercel.com/arisbeks-projects/final-web")
 public class CodeController {
 
     @Autowired
